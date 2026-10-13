@@ -1,0 +1,161 @@
+Aqui tens apenas o código CSS com aquele estilo "chave" (estilo topo, moderno e com efeito neon/glow):
+/* Importar fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0e1b;
+  background-image: radial-gradient(circle at 50% 50%, #1a1c38 0%, #0d0e1b 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Cabeçalho Futurista */
+header {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 900px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00f2fe 0%, #4facfe 50%, #b827fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #a0a5c0;
+  font-size: 1.1rem;
+}
+
+/* Container dos Cartões */
+.container {
+  display: flex;
+  gap: 25px;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* Card Base */
+.card {
+  background: rgba(23, 25, 48, 0.7);
+  backdrop-filter: blur(8px);
+  flex: 1;
+  min-width: 260px;
+  max-width: 300px;
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Ícones dos Cards */
+.icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #b0b5cf;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.btn-more {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.btn-more:hover {
+  opacity: 0.8;
+}
+
+/* --- Estilos Específicos e Neon por Tecnologia --- */
+
+/* HTML - Laranja Glow */
+.html-card {
+  border: 2px solid #ff5722;
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.2);
+}
+.html-card .icon-box {
+  border: 2px solid #ff5722;
+  color: #ff5722;
+}
+.html-card h2, .html-card .btn-more {
+  color: #ff7043;
+}
+
+/* CSS - Azul Glow */
+.css-card {
+  border: 2px solid #00d2ff;
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+}
+.css-card .icon-box {
+  border: 2px solid #00d2ff;
+  color: #00d2ff;
+}
+.css-card h2, .css-card .btn-more {
+  color: #33e0ff;
+}
+
+/* JS - Amarelo Glow */
+.js-card {
+  border: 2px solid #ffea00;
+  box-shadow: 0 0 15px rgba(255, 234, 0, 0.2);
+}
+.js-card .icon-box {
+  border: 2px solid #ffea00;
+  color: #ffea00;
+}
+.js-card h2, .js-card .btn-more {
+  color: #ffea00;
+}
